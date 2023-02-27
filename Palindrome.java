@@ -24,7 +24,6 @@ class Palindrome{
 
     public static boolean isPalindrome(String wordToCheck){
         //Membuat array char untuk mengekstrak tiap karakter dari String yang diinput user
-        char[] userWord = new char[wordToCheck.length()];
         char[] palindromeWord = new char[wordToCheck.length()];
 
         //Variabel status untuk menentukan palindrome atau tidak palindrome
@@ -35,11 +34,11 @@ class Palindrome{
             palindromeWord[j] = wordToCheck.charAt(i);
 
             //Memasukkan char dari String wordToCheck dengan index dimulai dari awal ke akhir
-            userWord[j] = wordToCheck.charAt(j);
+            // userWord[j] = wordToCheck.charAt(j);
 
             //Melakukan pengecekan apakah palindromeWord[j] tidak sama dengan userWord[j]
             //Jika tidak sama,maka loop akan berhenti
-            if(palindromeWord[j] != userWord[j]){
+            if(palindromeWord[j] != wordToCheck.charAt(i)){
                 break;
             }
             //Jika sama, maka isPalindrome akan berubah jadi true lalu loop akan terhenti
