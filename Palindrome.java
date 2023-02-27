@@ -7,7 +7,7 @@ class Palindrome{
         System.out.print("Masukkan bilangan / kata: ");
         
         //Menerima inputan dari user
-        String word = scan.next();
+        String word = scan.nextLine();
 
         System.out.println("");
 
@@ -17,7 +17,7 @@ class Palindrome{
         //Membuat inputan dari user menjadi lower case agar lebih mudah saat prsoes pengecekan
         String wordLCase = word.toLowerCase();
 
-        boolean palindromeStatus = isPalindrome(wordLCase);
+        boolean palindromeStatus = isPalindrome(wordLCase.trim());
         System.out.println("Status Palindrome: " + palindromeStatus);   
     }
 
